@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dimas.dimaskomara_1202154210_modul2.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/warunglaper" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="53dp"
+        android:text="Pilih Menu:"
+        android:textSize="20sp"
+        android:id="@+id/textView2" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="18dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/rbt_TakeAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/take_away"
+            android:onClick="onclickRadiobutton"/>
+
+        <RadioButton
+            android:id="@+id/rbt_DineIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dine_in"
+            android:onClick="onclickRadiobutton"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:layout_weight="1"
+        android:onClick="PesanSekarang"
+        android:text="PESAN SEKARANG" />
+
+
+
+</RelativeLayout>
